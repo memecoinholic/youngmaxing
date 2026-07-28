@@ -1,0 +1,362 @@
+<!DOCTYPE html><html lang="en"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YOUNGMAXING | The Baby Bryan</title>
+  <meta name="description" content="YOUNGMAXING (YOUNGMAXING) — The Queen of the Kabosu Family. A Solana memecoin of warmth, charm, and community.">
+  <link rel="icon" type="image/png" href="images/logo.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Fredoka:wght@400;500;600;700&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="bg-layer" aria-hidden="true">
+    <div class="bg-gradient"></div>
+    <div class="bg-vignette"></div>
+    <canvas id="sparkCanvas"></canvas>
+    <div class="paw-field" id="pawField"></div>
+    <div class="orb orb-a"></div>
+    <div class="orb orb-b"></div>
+    <div class="orb orb-c"></div>
+  </div>
+
+  <header class="site-header" id="top">
+    <nav class="nav">
+      <a class="nav-brand" href="#top">
+        <img src="images/logo.jpg" alt="YOUNGMAXING logo" class="nav-logo">
+        <span class="nav-wordmark">YOUNGMAXING</span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="nav-links" id="navLinks">
+        <a href="#about">About</a>
+        <a href="#howtobuy">How to Buy</a>
+        <a href="#chart">Chart</a>
+        <a href="#join">Join Us</a>
+        <a class="nav-buy" data-pump-link="" href="https://swap.pump.fun/" target="_blank" rel="noopener noreferrer">
+          <img src="images/pumpswap.svg" alt="">
+          Buy
+        </a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="hero">
+      <div class="hero-glow" aria-hidden="true"></div>
+      <div class="hero-ring" aria-hidden="true"></div>
+      <div class="hero-ring hero-ring-delay" aria-hidden="true"></div>
+
+      <div class="hero-stage">
+        <div class="hero-media reveal">
+          <div class="logo-orbit">
+            <img src="images/logo.jpg" alt="YOUNGMAXING" class="hero-logo">
+            <span class="orbit-spark s1"></span>
+            <span class="orbit-spark s2"></span>
+            <span class="orbit-spark s3"></span>
+          </div>
+          <div class="hero-video-shell">
+            <video class="hero-video" autoplay="" muted="" loop="" playsinline="" poster="assets/logo.jpg">
+              <source src="media/video.mp4" type="video/mp4">
+            </video>
+            <div class="video-shine" aria-hidden="true"></div>
+          </div>
+        </div>
+
+        <div class="hero-copy reveal">
+          <p class="hero-kicker">
+            <img src="images/solana.svg" alt="" class="sol-icon">
+            Solana Memecoin
+          </p>
+          <h1 class="hero-title">YOUNGMAXING</h1>
+          <p class="hero-symbol">___________________</p>
+          <p class="hero-tagline">The Baby bryan</p>
+          <p class="hero-lead"> 
+            Tiny body. Endless youth. A viral icon born from internet chaos. Baby Bryan leads the Youngmaxing movement — where aging is FUD and memes live forever.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn btn-gold" data-pump-link="" href="https://swap.pump.fun/" target="_blank" rel="noopener noreferrer">
+              <img src="images/pumpswap.svg" alt="">
+              <span>Buy on PumpSwap</span>
+            </a>
+            <a class="btn btn-ghost" data-chart-link="" href="https://dexscreener.com/solana" target="_blank" rel="noopener noreferrer">
+              <img src="images/dexscreener.svg" alt="" class="icon-dex">
+              <span>DexScreener</span>
+            </a>
+            <a class="btn btn-ghost" data-x-link="" href="https://x.com/YOUNGMAXING_Sol" target="_blank" rel="noopener noreferrer">
+              <img src="images/x.svg" alt="" class="icon-x">
+              <span>Follow on X</span>
+            </a>
+          </div>
+
+          <div class="ca-box" id="caBox" hidden="">
+            <span class="ca-label">Contract</span>
+            <code class="ca-value" id="caValue"></code>
+            <button type="button" class="ca-copy" id="caCopy" aria-label="Copy contract address">Copy</button>
+          </div>
+        </div>
+      </div>
+
+      <a class="scroll-cue" href="#about" aria-label="Scroll to about">
+        <span class="scroll-line"></span>
+      </a>
+    </section>
+
+    <section class="section about" id="about">
+      <div class="section-inner">
+        <header class="section-head reveal">
+          <p class="eyebrow">The Story</p>
+          <h2>About YOUNGMAXING</h2>
+          <p class="section-sub">A baby with billionaire dreams, immortal memes, and a community that never grows</p>
+        </header>
+
+        <div class="about-layout">
+          <div class="about-portrait reveal">
+            <div class="portrait-frame">
+              <img src="images/logo.jpg" alt="YOUNGMAXING portrait">
+              <div class="portrait-halo" aria-hidden="true"></div>
+            </div>
+            <p class="portrait-caption">Cute. Strong. Community.</p>
+          </div>
+
+          <div class="about-text reveal">
+            <h3>The Youngest Meme on the Internet</h3>
+            <p>
+              Inspired by the viral "Baby Bryan" phenomenon, <strong>YOUNGMAXING</strong> transforms one of the internet's wildest longevity stories into a full-blown Solana memecoin. The idea of preserving youth forever sparked millions of discussions, memes, and conspiracy theories—and now it's been reborn as pure on-chain culture.
+
+With an oversized baby head, an expression that has seen centuries despite being "newborn," and an unstoppable desire to stay young forever, Baby Bryan has become the face of the Youngmaxing Movement.
+            </p>
+            <p>
+              <strong>$YOUNGMAXING - Baby bryan</strong> carries that energy onto Solana: absurd, futuristic, and built for a community that believes memes age better than people. This isn't about science—it's about embracing internet culture, turning viral moments into legends, and proving that the youngest meme can have the biggest impact.
+            </p>
+
+            <ul class="about-traits">
+              <li>
+                <span class="trait-mark"></span>
+                <div>
+                  <strong>Royal Warmth</strong>
+                  <p>Chocolate gold aesthetics inspired by her coin and collar charms.</p>
+                </div>
+              </li>
+              <li>
+                <span class="trait-mark"></span>
+                <div>
+                  <strong>Family Legacy</strong>
+                  <p>Tied to the Kabosu lineage — a story the culture already knows.</p>
+                </div>
+              </li>
+              <li>
+                <span class="trait-mark"></span>
+                <div>
+                  <strong>Community Crown</strong>
+                  <p>A Solana memecoin meant for holders who move with heart.</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Video Section -->
+<section class="section video-section" id="video">
+    <div class="section-inner">
+
+        <header class="section-head reveal">
+            <p class="eyebrow">Official Video</p>
+            <h2>Watch Youngmaxing</h2>
+            <p class="section-sub">
+                Watch The Story of How Baby Bryan Came to Be.
+            </p>
+        </header>
+
+        <div class="video-wrapper reveal">
+            <video autoplay muted loop playsinline controls>
+                <source src="media/youngmaxingvideo.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+
+    </div>
+</section>
+<section class="section mini-game" id="game">
+
+    <div class="section-inner">
+
+        <header class="section-head reveal">
+            <p class="eyebrow">Mini Game</p>
+            <h2>Catch Baby Bryan ⚡</h2>
+            <p class="section-sub">
+                Click Baby Bryan as many times as you can before time runs out!
+            </p>
+        </header>
+
+        <div class="game-panel">
+
+            <div class="game-info">
+                <span>Score: <b id="score">0</b></span>
+                <span>Time: <b id="time">30</b>s</span>
+            </div>
+
+            <button id="startGame" class="game-btn">
+                Start Game
+            </button>
+
+            <div class="game-area" id="gameArea">
+
+    <video class="game-bg" autoplay muted loop playsinline>
+        <source src="media/gamebg.mp4" type="video/mp4">
+    </video>
+
+    <img src="images/babybryan.png" id="target">
+
+</div>
+                <img src="images/babybryan.png" id="target">
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Game Sounds -->
+<audio id="startSound" preload="auto">
+    <source src="audio/game-start.mp3" type="audio/mpeg">
+</audio>
+
+<audio id="winSound" preload="auto">
+    <source src="audio/game-win.mp3" type="audio/mpeg">
+</audio>
+
+<audio id="loseSound" preload="auto">
+    <source src="audio/game-over.mp3" type="audio/mpeg">
+</audio>
+
+<audio id="clickSound" preload="auto">
+    <source src="audio/click.mp3" type="audio/mpeg">
+</audio>
+
+</section>
+
+    <section class="section howtobuy" id="howtobuy">
+      <div class="section-inner">
+        <header class="section-head reveal">
+          <p class="eyebrow">Path to the Throne</p>
+          <h2>How to Buy</h2>
+          <p class="section-sub">Four soft steps to join the queen’s court on Solana.</p>
+        </header>
+
+        <ol class="buy-steps">
+          <li class="buy-step reveal">
+            <span class="step-num">01</span>
+            <h3>Get a Wallet</h3>
+            <p>Install a Solana wallet such as Phantom or Solflare and secure your seed phrase.</p>
+          </li>
+          <li class="buy-step reveal">
+            <span class="step-num">02</span>
+            <h3>Fund with SOL</h3>
+            <p>Buy SOL on an exchange, then send it to your wallet for gas and swaps.</p>
+          </li>
+          <li class="buy-step reveal">
+            <span class="step-num">03</span>
+            <h3>Open PumpSwap</h3>
+            <p>Head to PumpSwap, paste the YOUNGMAXING contract, and set your amount.</p>
+          </li>
+          <li class="buy-step reveal">
+            <span class="step-num">04</span>
+            <h3>Swap & Hold</h3>
+            <p>Confirm the swap, greet the queen, and keep an eye on DexScreener.</p>
+          </li>
+        </ol>
+
+        <div class="howto-cta reveal">
+          <a class="btn btn-gold" data-pump-link="" href="https://swap.pump.fun/" target="_blank" rel="noopener noreferrer">
+            <img src="images/pumpswap.svg" alt="">
+            <span>Buy YOUNGMAXING</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section chart" id="chart">
+      <div class="section-inner">
+        <header class="section-head reveal">
+          <p class="eyebrow">Live Markets</p>
+          <h2>Chart</h2>
+          <p class="section-sub">DexScreener chart for YOUNGMAXING on Solana.</p>
+        </header>
+
+        <div class="chart-shell reveal">
+          <div class="chart-frame">
+            <iframe id="dexFrame" title="YOUNGMAXING DexScreener Chart" src="https://dexscreener.com/solana?embed=1&theme=dark&trades=0&info=0" loading="lazy"></iframe>
+          </div>
+          <a class="chart-open" data-chart-link="" href="https://dexscreener.com/solana" target="_blank" rel="noopener noreferrer">
+            <img src="images/dexscreener.svg" alt="" class="icon-dex">
+            Open on DexScreener
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section join" id="join">
+      <div class="section-inner">
+        <header class="section-head reveal">
+          <p class="eyebrow">The Court Awaits</p>
+          <h2>Join Us</h2>
+          <p class="section-sub">Follow the queen. Share the warmth. Build the community.</p>
+        </header>
+
+        <div class="join-banner reveal">
+          <img src="images/banner.png" alt="YOUNGMAXING banner — Cute. Strong. Community.">
+          <div class="banner-shimmer" aria-hidden="true"></div>
+        </div>
+
+        <div class="join-links reveal">
+          <a class="join-card" data-x-link="" href="https://x.com/YOUNGMAXING_Sol" target="_blank" rel="noopener noreferrer">
+            <img src="images/x.svg" alt="" class="icon-x">
+            <span>X / Twitter</span>
+          </a>
+          <a class="join-card" data-pump-link="" href="https://swap.pump.fun/" target="_blank" rel="noopener noreferrer">
+            <img src="images/pumpswap.svg" alt="">
+            <span>PumpSwap</span>
+          </a>
+          <a class="join-card" data-chart-link="" href="https://dexscreener.com/solana" target="_blank" rel="noopener noreferrer">
+            <img src="images/dexscreener.svg" alt="" class="icon-dex">
+            <span>DexScreener</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <a class="footer-brand" href="#top">
+        <img src="images/logo.jpg" alt="">
+        <div>
+          <strong>YOUNGMAXING</strong>
+          <span>$YOUNGMAXING</span>
+        </div>
+      </a>
+      <p class="footer-tag">The Queen of the Kabosu Family</p>
+      <div class="footer-links">
+        <a data-x-link="" href="https://x.com/YOUNGMAXING_Sol" target="_blank" rel="noopener noreferrer">
+          <img src="images/x.svg" alt="" class="icon-x">
+        </a>
+        <a data-pump-link="" href="https://swap.pump.fun/" target="_blank" rel="noopener noreferrer">
+          <img src="images/pumpswap.svg" alt="">
+        </a>
+        <a data-chart-link="" href="https://dexscreener.com/solana" target="_blank" rel="noopener noreferrer">
+          <img src="images/dexscreener.svg" alt="" class="icon-dex">
+        </a>
+      </div>
+      <p class="footer-note">YOUNGMAXING is a community memecoin on Solana. Nothing here is financial advice.</p>
+    </div>
+  </footer>
+
+  <script src="js/config.js"></script>
+  <script src="js/main.js"></script>
+
+
+</body></html>
